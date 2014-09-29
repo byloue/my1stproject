@@ -1,0 +1,18 @@
+void* voidfunction(void* (*funpoint)(void*),void* param){
+ return funpoint(param);
+}
+
+void* outthis(void* str){
+ int ret = false;
+ if (ret = (str != NULL))
+ cout << (char*)str;
+ return (void*)(int*)&ret;
+}
+
+
+int main(){
+return *(int*)voidfunction(&outthis,(void*)"\x48\x65\x6c\x6c\x6f\x20\x57\x6f\x72\x6c\x64");
+}
+
+	
+Edit & Run
